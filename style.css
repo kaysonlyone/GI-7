@@ -1,0 +1,142 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: rgb(228, 194, 215);
+}
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.buttons {
+    display: grid;
+    background-color: pink;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2px;
+    width: 200px;
+    height: 200px;
+    row-gap: 5px;
+
+
+}
+
+#zero {
+    grid-column: 1/span 2;
+
+}
+
+#text-display {
+    width: 193px;
+    height: 50px;
+    border-radius: 7px;
+    border-color: pink;
+    font-size: larger;
+    color:  rgb(189, 13, 110);
+   
+
+
+
+
+}
+
+.container-calculator {
+/* display: block; */
+position:fixed;
+top:25%;
+left:50%;
+    /* margin: auto;
+    width: 200px;
+    height: 257px;
+    margin-top: 10%;
+    margin-left: 44.5%; */
+    border: 5px solid rgb(226, 147, 147);
+    border-radius: 10px;
+  
+   
+   
+
+   
+  
+   
+}
+
+
+button {
+    border-radius: 40px;
+    border-color: rgb(189, 13, 110);
+    font-size: large;
+
+
+
+
+
+}
+
+#clear {
+    background-color: rgb(247, 172, 199);
+}
+#negative {
+    background-color: rgb(247, 172, 199);
+
+}
+#percent {
+    background-color: rgb(247, 172, 199);
+
+}
+
+
+#divide {
+    background-color: rgb(235, 74, 101);
+    color: whitesmoke
+}
+
+
+#multiply {
+    background-color: rgb(235, 74, 101);
+    color: whitesmoke;
+}
+
+#minus {
+    background-color: rgb(235, 74, 101);
+    color: whitesmoke;
+
+}
+
+#plus {
+    background-color: rgb(235, 74, 101);
+    color: whitesmoke;
+
+}
+
+#equal {
+    background-color: rgb(235, 74, 101);
+    color: whitesmoke;
+
+}
+
+@media (min-width:320px) and (max-width:480px){
+    .container-calculator {
+        position: fixed;
+        left:25%;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px){
+    .container-calculator {
+        position: fixed;
+        left:33%;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    .container-calculator {
+        position: fixed;
+        left:40%;
+    }
+}
+
+
+
